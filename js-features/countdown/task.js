@@ -6,9 +6,9 @@ const Timer = function () {
     
     if (output.textContent == 0) {
         alert("Вы победили в конкурсе!")
-        clearInterval(Timer);
+        clearInterval(TimerID);
     }
 
 }
 
-setInterval(Timer, 500);
+const TimerID = setInterval(Timer, 500);
